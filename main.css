@@ -34,7 +34,7 @@ section {
   text-align: center;
 }
 /* Vertical Rhythm */
-h1, p {
+h1, h2, h3, p, img {
   margin-bottom: 1.5rem;
 }
 /* Links */
@@ -94,5 +94,28 @@ header span::before, header span::after {
   vertical-align: middle;
   margin: 0 .5rem;
   background-color: white;
+  content: "";
+}
+
+/***********************/
+/*** Location Styles ***/
+/***********************/
+.locations-cell h3 {
+  font-weight: 700;
+}
+.locations-cell img {
+  width: auto;
+  height: 7.5rem;
+}
+.locations-cell p {
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 0;
+}
+.locations-cell::after {
+  display: block;
+  width: 25vw;
+  height: 3px;
+  margin: 1.5rem auto;
+  background-color: #444349;
   content: "";
 }
