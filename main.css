@@ -4,16 +4,33 @@
 * {
   box-sizing: border-box;
 }
+/* Section Sizing and Positioning */
+section {
+  width: 100%;
+  padding: 1.5rem 2.5%;
+  text-align: center;
+}
+/* Vertical Rhythm */
+h2 {
+  margin-bottom: 1rem;
+}
+h3, p, img {
+  margin-bottom: 1.5rem;
+}
 /* Background */
 body {
   background-color: beige;
   background-image: url(assets/wedding-background.png);
+  background-repeat: repeat;
+  background-attachment: scroll;
   background-position: center;
+}
+.program, .faq {
+  background-color: rgba(0, 0, 0, .6);
 }
 /* Typography */
 body {
   font-family: "Libre Baskerville", serif;
-  color: #444349;
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -24,18 +41,14 @@ h2 {
   font-size: 3rem;
 }
 h3 {
+  font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
 }
-/* Section Sizing and Positioning */
-section {
-  width: 95%;
-  margin: 1.5rem auto;
-  padding: .5rem 1rem;
-  text-align: center;
+.locations {
+  color: #444349;
 }
-/* Vertical Rhythm */
-h1, h2, h3, p, img {
-  margin-bottom: 1.5rem;
+.program, .faq {
+  color: #d2ba87;
 }
 /* Links */
 a {
@@ -62,7 +75,7 @@ header {
 }
 .header-wrap {
   width: 100%;
-  padding: .625rem;
+  padding: .75rem;
   background-color: rgba(0, 0, 0, .5);
   text-align: center;
 }
@@ -78,14 +91,13 @@ header p::after {
   display: block;
   width: 12.5rem;
   height: 1px;
-  margin: .5rem auto;
+  margin: .75rem auto .75rem;
   background-color: white;
   content: "";
 }
 header h1 {
   color: #d2ba87;
-  font-size: 3.15rem;
-  margin-bottom: 0;
+  font-size: 3rem;
 }
 header span::before, header span::after {
   display: inline-block;
@@ -111,11 +123,27 @@ header span::before, header span::after {
   font-family: "Mulish", sans-serif;
   margin-bottom: 0;
 }
-.locations-cell::after {
+.divider::after {
   display: block;
   width: 25vw;
   height: 3px;
   margin: 1.5rem auto;
   background-color: #444349;
   content: "";
+}
+
+/**********************/
+/*** Program Styles ***/
+/**********************/
+.program p, .program ul {
+  font-family: Mulish, sans-serif;
+}
+.program p {
+  font-style: italic;
+}
+.program ul {
+  width: 16rem;
+  margin: 0 auto;
+  letter-spacing: .025rem;
+  text-align: left;
 }
