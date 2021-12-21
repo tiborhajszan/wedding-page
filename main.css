@@ -1,0 +1,48 @@
+/**********************/
+/*** General Styles ***/
+/**********************/
+* {
+  box-sizing: border-box;
+}
+/* Background */
+body {
+  background-color: beige;
+  background-image: url(assets/wedding-background.png);
+  background-position: center;
+}
+/* Typography */
+body {
+  font-family: "Libre Baskerville", serif;
+  color: #444349;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+h1, h2 {
+  font-family: "Great Vibes", cursive;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+/* Section Sizing and Positioning */
+section {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+/* Vertical Rhythm */
+h1, p {
+  margin-bottom: 1.5rem;
+}
+/* Links */
+a {
+  color: #bd806e;
+  text-decoration: none;
+}
+a:hover {
+  color: #eda087;
+  transition: color .25s ease-in-out;
+}
