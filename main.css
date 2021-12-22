@@ -1,23 +1,24 @@
-/**********************/
-/*** General Styles ***/
-/**********************/
+/****************************************/
+/*** General - Sizing and Positioning ***/
+/****************************************/
 * {
   box-sizing: border-box;
 }
-/* Section Sizing and Positioning */
 section {
   width: 100%;
   padding: 1.5rem 2.5%;
   text-align: center;
 }
-/* Vertical Rhythm */
 h2 {
   margin-bottom: 1rem;
 }
 h3, p, img {
   margin-bottom: 1.5rem;
 }
-/* Background */
+
+/****************************/
+/*** General - Background ***/
+/****************************/
 body {
   background-color: beige;
   background-image: url(assets/wedding-background.png);
@@ -28,9 +29,11 @@ body {
 .program, .faq {
   background-color: rgba(0, 0, 0, .6);
 }
-/* Typography */
+
+/****************************/
+/*** General - Typography ***/
+/****************************/
 body {
-  font-family: "Libre Baskerville", serif;
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -44,13 +47,16 @@ h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
 }
-.locations {
+.locations, .gifts {
   color: #444349;
 }
 .program, .faq {
   color: #d2ba87;
 }
-/* Links */
+
+/***********************/
+/*** General - Links ***/
+/***********************/
 a {
   color: #bd806e;
   text-decoration: none;
@@ -80,6 +86,7 @@ header {
   text-align: center;
 }
 header p, header span {
+  font-family: "Libre Baskerville", serif;
   color: rgba(255, 255, 255, .9);
   font-size: 1.25rem;
   letter-spacing: .15rem;
@@ -91,7 +98,7 @@ header p::after {
   display: block;
   width: 12.5rem;
   height: 1px;
-  margin: .75rem auto .75rem;
+  margin: .75rem auto;
   background-color: white;
   content: "";
 }
@@ -123,7 +130,7 @@ header span::before, header span::after {
   font-family: "Mulish", sans-serif;
   margin-bottom: 0;
 }
-.divider::after {
+.locations .divider::after {
   display: block;
   width: 25vw;
   height: 3px;
@@ -146,4 +153,18 @@ header span::before, header span::after {
   margin: 0 auto;
   letter-spacing: .025rem;
   text-align: left;
+}
+
+/********************/
+/*** Gifts Styles ***/
+/********************/
+.gifts p {
+  font-family: "Libre Baskerville", serif;
+}
+.gifts img {
+  width: auto;
+  height: 7.5rem;
+}
+.gifts p:last-child {
+  margin-bottom: 0;
 }
