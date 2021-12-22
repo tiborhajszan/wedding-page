@@ -15,6 +15,9 @@ h2 {
 h3, p, img {
   margin-bottom: 1.5rem;
 }
+.gifts p:last-child, .faq p:last-child, .contact p:last-child {
+  margin-bottom: 0;
+}
 
 /****************************/
 /*** General - Background ***/
@@ -47,7 +50,7 @@ h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 1.5rem;
 }
-.locations, .gifts {
+.locations, .gifts, .contact {
   color: #444349;
 }
 .program, .faq {
@@ -70,12 +73,12 @@ a:hover {
 /*** Header Styles ***/
 /*********************/
 header {
+  width: 100%;
+  height: 100vh;
   background-image: url(assets/wedding-cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% center;
-  width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -127,7 +130,7 @@ header span::before, header span::after {
   height: 7.5rem;
 }
 .locations p {
-  font-family: "Mulish", sans-serif;
+  font-family: Mulish, sans-serif;
   margin-bottom: 0;
 }
 .locations .divider::after {
@@ -165,15 +168,12 @@ header span::before, header span::after {
   width: auto;
   height: 7.5rem;
 }
-.gifts p:last-child {
-  margin-bottom: 0;
-}
 
 /******************/
 /*** FAQ Styles ***/
 /******************/
 .faq p {
-  font-family: "Mulish", sans-serif;
+  font-family: Mulish, sans-serif;
   text-align: left;
 }
 .faq .question {
@@ -188,6 +188,28 @@ header span::before, header span::after {
   background-color: #d2ba87;
   content: "";
 }
-.faq p:last-child {
-  margin-bottom: 0;
+
+/**********************/
+/*** Contact Styles ***/
+/**********************/
+.contact p {
+  font-family: "Libre Baskerville", serif;
+}
+
+/*********************/
+/*** Footer Styles ***/
+/*********************/
+footer {
+  width: 100%;
+  height: 10vh;
+  padding: 1.5rem 2.5%;
+  background-color: #606060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer small {
+  font-family: Mulish, sans-serif;
+  color: white;
+  font-size: .875rem;
 }
