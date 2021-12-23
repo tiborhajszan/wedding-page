@@ -6,7 +6,7 @@
 }
 section {
   width: 100%;
-  padding: 1.5rem 2.5%;
+  padding: 2.5rem 2.5%;
   text-align: center;
 }
 h2 {
@@ -27,7 +27,6 @@ body {
   background-image: url(assets/wedding-background.png);
   background-repeat: repeat;
   background-attachment: scroll;
-  background-position: center;
 }
 .program, .faq {
   background-color: rgba(0, 0, 0, .6);
@@ -42,8 +41,6 @@ body {
 }
 h1, h2 {
   font-family: "Great Vibes", cursive;
-}
-h2 {
   font-size: 3rem;
 }
 h3 {
@@ -79,7 +76,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% center;
+  background-attachment: scroll;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .header-wrap {
@@ -118,10 +117,29 @@ header span::before, header span::after {
   background-color: white;
   content: "";
 }
+@media (min-width: 768px) {
+  header {
+    background-position: center;
+  }
+  .header-wrap {
+    width: 50%;
+    border-radius: 5px;
+    padding: 1.5rem;
+  }
+  header p {
+    text-transform: uppercase;
+  }
+  header p::after {
+    margin: 1.5rem auto;
+  }
+  header h1 {
+    font-size: 7rem;
+  }
+}
 
-/***********************/
-/*** Location Styles ***/
-/***********************/
+/************************/
+/*** Locations Styles ***/
+/************************/
 .locations h3 {
   font-weight: 700;
 }
@@ -140,6 +158,19 @@ header span::before, header span::after {
   margin: 1.5rem auto;
   background-color: #444349;
   content: "";
+}
+@media (min-width: 768px) {
+  .locations-cell {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+  }
+  .locations .divider {
+    margin-right: 2%;
+  }
+  .locations .divider::after {
+    display: none;
+  }
 }
 
 /**********************/
@@ -187,6 +218,22 @@ header span::before, header span::after {
   margin: 1.5rem auto;
   background-color: #d2ba87;
   content: "";
+}
+@media (min-width: 768px) {
+  .faq-column {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
+  .faq h3 {
+    text-align: left;
+  }
+  .faq .divider {
+    margin-right: 4%;
+  }
+  .faq .divider::after {
+    display: none;
+  }
 }
 
 /**********************/
